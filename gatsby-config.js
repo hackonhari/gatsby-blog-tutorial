@@ -7,8 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: "Pandas Eating Lots",
-    description:`This is the gatsby tutorial website builded by following each and every step in that tutorial.`,
-    author:`gatsbyjs`
+    description: `This is the gatsby tutorial website builded by following each and every step in that tutorial.`,
+    author: `gatsbyjs`,
   },
   plugins: [
     {

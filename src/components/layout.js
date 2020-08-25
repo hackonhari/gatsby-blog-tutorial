@@ -21,6 +21,10 @@ export default function Layout({ children }) {
         margin: 0px auto;
         max-width: 700px;
         padding: ${rhythm(1.6)};
+        @media (max-width: 420px) {
+          padding: ${rhythm(1)};
+          display:grid;
+        }
       `}
     >
       <Link to={`/`}>
@@ -30,7 +34,7 @@ export default function Layout({ children }) {
             display: inline-block;
             font-style: normal;
             &:hover {
-              color:darkblue;
+              color: darkblue;
             }
           `}
         >
@@ -59,6 +63,18 @@ export default function Layout({ children }) {
         `}
       >
         My Files
+      </Link>
+      <Link
+        to={"/contact"}
+        css={css`
+          float: right;
+          margin-right: 10px;
+          &:hover {
+            text-decoration: none;
+          }
+        `}
+      >
+        Contact
       </Link>
       {children}
     </div>
